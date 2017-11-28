@@ -1,5 +1,7 @@
 ---
 layout: main
+title: Regels
+description: Zo gaat het spel
 ---
 
 Control Escape is een collaboratief Escape Game waarbij alle spelers zelf voor een raadsel zorgen. 
