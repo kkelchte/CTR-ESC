@@ -4,7 +4,7 @@ title: Instructies
 description: Een goed raadsel maak je zo.
 ---
 
-Op deze pagina vind je 5 stappen die je een raadselketting doen bouwen met een persoonlijke toets. 
+Op deze pagina vind je 6 stappen die je een raadselketting doen bouwen met een persoonlijke toets. 
 Voor alle duidelijkheid doet 14-jarige Klaas ook mee.
 
 ### Stap 1: Inspiratie
