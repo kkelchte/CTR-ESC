@@ -2,7 +2,6 @@
 layout: main
 ---
 
-Dit las je al op de vorige pagina:
 Control Escape is een collaboratief Escape Game waarbij alle spelers zelf voor een raadsel zorgen. 
 De raadsels worden samengevoegd en doorheen geschud. De spelers moeten samen de raadsels kraken binnen de opgelegde tijd zonder de hulp van de bedenker van elk raadsel. Dit allemaal kort door de bocht.
 
@@ -16,7 +15,7 @@ De raadsels zouden ongeveer 10 minuten mogen duren, wanneer er langer dan 10 min
 
 De raadsels kunnen zeer ruim geinterpreteerd worden. Dit kan een zoektocht zijn, hindernis parcours, quiz-vraag, rekensom, ... . Misschien is een raadselketting een betere omschrijving gezien het voor 5 personen niet gemakkelijk te kraken mag zijn in 10 minuten. Er is steeds één hoofdoplossing of paswoord die ingegeven moet worden in om verder te kunnen gaan naar het volgende level. Daarnaast kan het zijn dat zijsporen leiden tot antwoorden op extra vragen die bonussen kunnen geven zoals extra tijd.
 
-Hoe de raadsels eruit zien of ingekleed worden is volledig vrij aan de spelers die ze maken. Er is echter wel een pagina met instructies of hulpvragen die je als maker een heel eind vooruit kunnen helpen. Die instructies vind je [hier](./assets/instructies.md).
+Hoe de raadsels eruit zien of ingekleed worden is volledig vrij aan de spelers die ze maken. Er is echter wel een pagina met instructies of hulpvragen die je als maker een heel eind vooruit kunnen helpen. Die instructies vind je [hier](./instructies.md).
 
 Als al de zes levels of raadsels gekraakt zijn binnen de toegestane tijd heerst er een geweldige beloning. Indien dit echter niet lukt ... dan .... dan euh... wel ja, eeuwige verdoemenis enzo.
 
