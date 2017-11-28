@@ -11,6 +11,6 @@ De raadsels worden samengevoegd en doorheen geschud. De spelers moeten samen de 
 Op dit platform vind je: 
 ### [Regels](./assets/regels.md) die alles nog eens helder uitleggen. 
 ### [Instructies](./assets/instructies.md) om zelf goede raadsels te creëren.
-### [Een formulier](./assets/formulier.md) waarin je je raadsel en antwoord kunt ingeven. 
+### Een [formulier](./assets/formulier.md) waarin je je raadsel en antwoord kunt ingeven. 
 
 
