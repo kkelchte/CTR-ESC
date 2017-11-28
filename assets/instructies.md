@@ -31,7 +31,7 @@ _bvb: al het basis materiaal te vinden in Age Of Empires: Hout, Steen, Goud en E
 - _Finale clues samen zijn de letter pi en een mank manneke._
 - _180 graden in radialen --> stenen op de koer in een halve cirkel_
 - _~~gebruik hout om een houten been te maken~~_
-- _vindt een houtenbeen__
+- _vindt een houtenbeen_
 - _volg de gouden munten_
 - _Vraag: Om een universiteit te bouwen heb je 500 goud nodig._
 
@@ -47,12 +47,14 @@ _bvb:_
 
 ### Stap 6: Finaliseer
 Nu mag alles voor jou misschien helder en vanzelfsprekend lijken. Op momenten van stress kan dit alles behalve zo zijn. Ga nog eens door de verschillende stappen. Als je ergens denkt dat het te moeilijk gaat zijn kan je altijd extra clues toevoegen die het duidelijker maken. Als je anderzijds denkt dat het momenteel nog iets te magertjes of gemakkelijk is, kan je steeds extra sfeerelementen toevoegen die tot dwaalsporen leiden. Het mag een beetje een uitdaging blijven! 
+
 `Een wijs man zei ooit: "Niets zo teleurstellend als een te gemakkelijk examen."`
 
--_Voeg aan halve cirkel uit steen strategische lijnen toe alsof een het aanval plan is met krijt._
--_Onder deze strategische lijnen voeg je ook goniometrische uitdrukkingen toe zoals cos(pi/4)=sqrt(2)/2_
--_Voeg expliciete vraagtekens toe overal waar de letter pi wordt verwacht._
--_Schrijf op papiertjes CAESER-code van QWOP alsook de letters Q-W-O-P_
+
+- _Voeg aan halve cirkel uit steen strategische lijnen toe alsof een het aanval plan is met krijt._
+- _Onder deze strategische lijnen voeg je ook goniometrische uitdrukkingen toe zoals cos(pi/4)=sqrt(2)/2_
+- _Voeg expliciete vraagtekens toe overal waar de letter pi wordt verwacht._
+- _Schrijf op papiertjes CAESER-code van QWOP alsook de letters Q-W-O-P_
 
 
 
