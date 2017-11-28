@@ -46,7 +46,8 @@ _bvb:_
 * _Welke japanse instructie is er net gegeven?_
 
 ### Stap 6: Finaliseer
-Nu mag alles voor jou misschien helder en vanzelfsprekend lijken. Op momenten van stress kan dit alles behalve zo zijn. Ga nog eens door de verschillende stappen. Als je ergens denkt dat het te moeilijk gaat zijn kan je altijd extra clues toevoegen die het duidelijker maken. Als je anderzijds denkt dat het momenteel nog iets te magertjes of gemakkelijk is, kan je steeds extra sfeerelementen toevoegen die tot dwaalsporen leiden.
+Nu mag alles voor jou misschien helder en vanzelfsprekend lijken. Op momenten van stress kan dit alles behalve zo zijn. Ga nog eens door de verschillende stappen. Als je ergens denkt dat het te moeilijk gaat zijn kan je altijd extra clues toevoegen die het duidelijker maken. Als je anderzijds denkt dat het momenteel nog iets te magertjes of gemakkelijk is, kan je steeds extra sfeerelementen toevoegen die tot dwaalsporen leiden. Het mag een beetje een uitdaging blijven! 
+`Een wijs man zei ooit: "Niets zo teleurstellend als een te gemakkelijk examen."`
 
 -_Voeg aan halve cirkel uit steen strategische lijnen toe alsof een het aanval plan is met krijt._
 -_Onder deze strategische lijnen voeg je ook goniometrische uitdrukkingen toe zoals cos(pi/4)=sqrt(2)/2_
