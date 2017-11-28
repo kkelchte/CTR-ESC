@@ -12,3 +12,5 @@ Op dit platform vind je:
 ### [Regels](./assets/regels.md) die alles nog eens helder uitleggen. 
 ### [Formulieren](./assets/formulier.md) waarin je je raadsel kunt ingeven. 
 ### [Instructies](./assets/instructies.md) om zelf goede raadsels te bedenken.
+
+
