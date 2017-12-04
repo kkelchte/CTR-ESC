@@ -13,4 +13,4 @@ Op dit platform vind je:
 ### [Instructies](./assets/instructies.md) om zelf goede raadsels te creëren.
 ### Een [formulier](./assets/formulier.md) waarin je je raadsel en antwoord kunt ingeven. 
 
-
+### Vragen? Opmerkingen? Hulp? Allemaal te verkrijgen [hier](mailto:kkelchtermans@gmail.com) of op 0494073234.
