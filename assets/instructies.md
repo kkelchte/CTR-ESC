@@ -5,7 +5,7 @@ description: Een goed raadsel maak je zo.
 ---
 
 Op deze pagina vind je 6 stappen die je helpen om een raadselketting te bouwen met een persoonlijke toets en een snuifje 2017. 
-Voor alle duidelijkheid geeft de 14-jarige Klaas uit 2004 ook mee in _italic_.
+Voor alle duidelijkheid doet de 14-jarige Klaas uit 2004 ook mee in _italic_.
 
 ### Stap 1: Inspiratie
 Bedenk potentiële uitgangspunten. Kies 5 zaken die je het afgelopen jaar hebt ontdekt of waar je veel plezier aan hebt beleefd in 2017, of die 2017 voor jou mee kleur gegeven hebben. Deze zaken kunnen vanalles zijn: thema's, muziek, beeld, locaties, boeken, verhalen, personen, ... . 
@@ -36,7 +36,7 @@ _bvb: al het basis materiaal te vinden in Age Of Empires: hout, steen, goud en e
 - _Hint: Om een universiteit te bouwen heb je 500 goud nodig._
 
 ### Stap 5: Zijsporen
-Als je de smaak te pakken hebt kan je voor nieuwe uitgangspunten van stap 1 de volgende stappen herhalen om zijtrajecten te bedenken die bij het kraken extra tijd opleveren. 
+Als je de smaak te pakken hebt kan je voor nieuwe uitgangspunten van stap 1 tot en met 4 om zijtrajecten te bedenken. Als deze zijtrajecten gevonden worden kan er extra tijd gewonnen worden wat cruciaal kan zijn om alle raadsels binnen de gegeven tijd opgelost te krijgen. 
 
 _bvb:_
 * _karate_
@@ -54,7 +54,7 @@ Ga nog eens door de verschillende stappen. Als je ergens denkt dat het te moeili
 - _Voeg aan halve cirkel uit steen strategische lijnen toe alsof een het aanval plan is met krijt._
 - _Onder deze strategische lijnen voeg je ook goniometrische uitdrukkingen toe zoals cos(pi/4)=sqrt(2)/2_
 - _Voeg expliciete vraagtekens toe overal waar de letter pi wordt verwacht._
-- _Schrijf op papiertjes CAESER-code van QWOP alsook de letters Q-W-O-P_
+- _Schrijf op papiertjes CAESAR-code van QWOP alsook de letters Q-W-O-P om te verwijzen naar het spelletjes van het manke mannetje._
 
 
 
