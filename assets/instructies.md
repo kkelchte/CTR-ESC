@@ -25,7 +25,10 @@ Gegeven je uitgangspunt en de brede definitie achter het concept, bepaal je nu Ã
 _bvb: pikeman_
 
 ### Stap 4: Bouw het raadsel
-Definieer met terugkerende stappen op welke wijze de spelers aan dit wachtwoord kunnen geraken. Het is fijn om vanuit een materiaal of locatie te vertrekken en te bedenken wat je daarmee kunt doen. Probeer minstens 3 stappen te bedenken. Het is ook fijn wanneer 1 stap uit verschillende parallelle taken bestaat die tegelijk kunnen uitgevoerd worden. Uiteindelijk bedenk je de hint die de spelers te zien krijgen bij de start te zien krijgen en op de goede weg moeten helpen.
+Het is fijn om vanuit een materiaal of locatie te vertrekken en te bedenken wat je daarmee kunt doen. Probeer minstens 3 stappen te bedenken. De raadselketting is tenslotte liever te lang dan te kort. Het is ook fijn wanneer 1 stap uit verschillende parallelle taken bestaat die tegelijk kunnen uitgevoerd worden. Definieer met terugkerende stappen op welke wijze de spelers aan dit wachtwoord kunnen geraken. Uiteindelijk bedenk je de hint die de spelers te zien krijgen bij de start te zien krijgen en op de goede weg moeten helpen. Beneden op deze pagina vind je nog inspiratie materiaal.
+
+Een laatste tip is ook dat je raadsel best toegankelijk is voor iedereen, met andere woorden niet te veel moeilijk denkkronkels en woorden die niemand begrijpt.
+
 
 _bvb: al het basis materiaal te vinden in Age Of Empires: hout, steen, goud en eten. Deze materialen kunnen geproeft, gevoeld, verstopt, ... worden._
 - _Finale clues zijn de letter pi en een mank manneke._
@@ -56,6 +59,10 @@ Ga nog eens door de verschillende stappen. Als je ergens denkt dat het te moeili
 - _Voeg expliciete vraagtekens toe overal waar de letter pi wordt verwacht._
 - _Schrijf op papiertjes CAESAR-code van QWOP alsook de letters Q-W-O-P om te verwijzen naar het spelletjes van het manke mannetje._
 
+
+### Extra inspiratie materiaal
+[Online gratis Escape Games](http://www.rustylake.com/room-escape-games)
+[Escape With Janet Youtube Channel](https://www.youtube.com/watch?v=YsfTKj7VBAA)
 
 
 
