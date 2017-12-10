@@ -15,6 +15,42 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.md",
+			"settings":
+			{
+				"buffer_size": 659,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/regels.md",
+			"settings":
+			{
+				"buffer_size": 2592,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/instructies.md",
+			"settings":
+			{
+				"buffer_size": 3524,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/formulier.md",
+			"settings":
+			{
+				"buffer_size": 93,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -48,10 +84,20 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/klaaskelchtermans/CTR-ESC"
+		"/Users/klaaskelchtermans/CTR-ESC",
+		"/Users/klaaskelchtermans/CTR-ESC/_layouts",
+		"/Users/klaaskelchtermans/CTR-ESC/assets",
+		"/Users/klaaskelchtermans/CTR-ESC/assets/css",
+		"/Users/klaaskelchtermans/CTR-ESC/docs",
+		"/Users/klaaskelchtermans/CTR-ESC/script"
 	],
 	"file_history":
 	[
+		"/Users/klaaskelchtermans/CTR-ESC/_layouts/main.html",
+		"/Users/klaaskelchtermans/CTR-ESC/_config.yml",
+		"/Users/klaaskelchtermans/CTR-ESC/docs/regels.md",
+		"/Users/klaaskelchtermans/CTR-ESC/docs/formulier.md",
+		"/Users/klaaskelchtermans/CTR-ESC/docs/instructies.md",
 		"/Users/klaaskelchtermans/CTR-ESC/index.md",
 		"/Users/klaaskelchtermans/CTR-ESC/index.html",
 		"/Users/klaaskelchtermans/esat/condor/condor_task_offline.sh",
@@ -61,7 +107,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -75,6 +121,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"{{site.baseurl}}/",
+			"docs"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -92,14 +140,127 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								574,
+								574
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/regels.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/instructies.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3174,
+								3174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 397.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/formulier.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 93,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"input":
 	{

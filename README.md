@@ -1,92 +1,142 @@
-# The Hacker theme
+# CTR-ESC project
 
-[![Build Status](https://travis-ci.org/pages-themes/hacker.svg?branch=master)](https://travis-ci.org/pages-themes/hacker) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-hacker.svg)](https://badge.fury.io/rb/jekyll-theme-hacker)
+This is a try out website to work with github pages in combination with heroku backend.
 
-*Hacker is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/hacker), or even [use it today](#usage).*
+The repository is cloned from the HACKER github theme that is build as a jekyll web page.
 
-![Thumbnail of hacker](thumbnail.png)
+In order to combine it with a Heroku backend I followed [this tutorial](https://coderwall.com/p/8lq1ba/how-to-create-a-contact-form-for-a-github-pages-served-jekyll-website).
 
-## Usage
+### Frontend:
 
-To use the Hacker theme:
+Cloning this project allows you to run it locally with bundle:
+1. Run `bundle exec jekyll serve` to start the preview server
+2. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
 
-1. Add the following to your site's `_config.yml`:
+You can adjust layout and style in the /assets/css/style.scss and /layouts/default.html place.
 
-    ```yml
-    theme: jekyll-theme-hacker
-    ```
+### Backend:
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+After creating a Heroku account (verified so you have to give a credit card). You sign up for Captcha (ensures email service is not misused) and Sendgrid (ensures an email is send with correct information by a safe way).
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+Create your heroku backend step by step:
 
+* make a local clone of your Heroku project after installing the heroku client.
 
-
-## Customizing
-
-### Configuration variables
-
-Hacker will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+```
+$ brew install heroku/brew/heroku
+$ heroku login
+$ heroku git:clone -a ctr-esc-form
+$ cd ctr-esc-form
 ```
 
-Additionally, you may choose to set the following optional variables:
+* start from a [rackbased](https://devcenter.heroku.com/articles/rack) git project. Just like in the steps if you follow this link.
 
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
+```
+$ cat > config.ru
+run lambda { |env| [200, {'Content-Type'=>'text/plain'}, StringIO.new("You go cowboy!\n")] }
+[Ctrl-D]
+$ cat > Gemfile
+source 'https://rubygems.org'
+gem 'rack'
+[Ctrl-D]
+$ touch Gemfile.lock
 ```
 
-### Stylesheet
+* test with bundle install
 
-If you'd like to add your own custom styles:
+```
+$ bundle install
+$ bundle exec rackup -p 9292 config.ru
+[CTR+C]
+```
 
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
+* gradually add more dependencies and see if it compiles locally and on heroku and fill in the proper CAPTCHA keys.
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+```
+$ cat >> Gemfile
+gem 'rack-recaptcha'
+gem 'sinatra'
+gem 'pony'
+gem 'json'
+[CTR+D]
+$ cat > config.ru
+require 'rubygems'
+require 'sinatra'
+require 'json'
+require 'rack/recaptcha'
+require 'pony'
 
-### Layouts
+use Rack::Recaptcha, :public_key => 'YOUR_PUBLIC_KEY', :private_key => 'YOUR_PRIVATE_KEY'
+helpers Rack::Recaptcha::Helpers
 
-If you'd like to change the theme's HTML layout:
+run lambda { |env| [200, {'Content-Type'=>'text/plain'}, StringIO.new("You go cowboy!\n")] }
+[CTR+D]
+$ bundle install
+$ bundle exec rackup -p 9292 config.ru
+```
 
-1. [Copy the original template](https://github.com/pages-themes/hacker/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
+* adding the application
 
-## Roadmap
+```
+$ cp config.ru config.ru.t
+$ sed '$ d' config.ru.t > config.ru
+$ cat >> config.ru
+require './application'
+run Sinatra::Application
+$ cat > appication.rb
+before do
+  content_type :json
+  headers 'Access-Control-Allow-Origin' => '*',
+          'Access-Control-Allow-Methods' => ['POST']
+end
 
-See the [open issues](https://github.com/pages-themes/hacker/issues) for a list of proposed features (and known issues).
+set :protection, false
+set :public_dir, Proc.new { File.join(root, "_site") }
 
-## Project philosophy
+post '/send_email' do
+  if recaptcha_valid?
+    res = Pony.mail(
+      :from => params[:name] + "<" + params[:email] + ">",
+      :to => 'kkelchtermans@gmail.com',
+      :subject => "[CTR-ESC] " + params[:subject],
+      :body => params[:message],
+      :via => :smtp,
+      :via_options => {
+        :address              => 'smtp.sendgrid.net',
+        :port                 => '587',
+        :enable_starttls_auto => true,
+        :user_name            => ENV['SENDGRID_USERNAME'],
+        :password             => ENV['SENDGRID_PASSWORD'],
+        :authentication       => :plain,
+        :domain               => 'heroku.com'
+      })
+    content_type :json
+    if res
+      { :message => 'success' }.to_json
+    else
+      { :message => 'failure_email' }.to_json
+    end
+  else
+    { :message => 'failure_captcha' }.to_json
+  end
+end
 
-The Hacker theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+not_found do
+  File.read('_site/404.html')
+end
 
-## Contributing
+get '/*' do
+  file_name = "_site#{request.path_info}/index.html".gsub(%r{\/+},'/')
+  if File.exists?(file_name)
+    File.read(file_name)
+  else
+    raise Sinatra::NotFound
+  end
+end
+$ git add *
+$ git commit -am 'add application'
+$ git push heroku master
+```
 
-Interested in contributing to Hacker? We'd love your help. Hacker is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](CONTRIBUTING.md) for instructions on how to contribute.
+* adding your form on the client or front end site
 
-### Previewing the theme locally
-
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
-
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/hacker`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
