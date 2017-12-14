@@ -3,7 +3,56 @@ layout: main
 title: Formulier
 description: Hier voer je de raadsels in.
 ---
+<script type="text/javascript">
+  function showRecaptcha(element) {
+    Recaptcha.create('6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U', element, {
+      theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
+      custom_theme_widget: 'recaptcha_widget'
+    });
+  }
 
+  function setupRecaptcha() {
+    var contactFormHost = 'https://ctr-esc-form.herokuapp.com/',
+        form = $('#contact-form'),
+        notice = form.find('#notice');
+
+    if (form.length) {
+      showRecaptcha('recaptcha_widget');
+
+      form.submit(function(ev){
+        ev.preventDefault();
+
+        $.ajax({
+          type: 'POST',
+          url: contactFormHost + 'send_email',
+          data: form.serialize(),
+          dataType: 'json',
+          success: function(response) {
+            switch (response.message) {
+              case 'success':
+                form.fadeOut(function() {
+                  form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
+                });
+                break;
+
+              case 'failure_captcha':
+                showRecaptcha('recaptcha_widget');
+                notice.text(notice.data('captcha-failed')).fadeIn();
+                break;
+
+              case 'failure_email':
+                notice.text(notice.data('error')).fadeIn();
+            }
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+            notice.text(notice.data('error')).fadeIn();
+          }
+        });
+      });
+    }
+  }
+  
+</script>
 <form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
 
   <label for="name">Name</label>
@@ -40,53 +89,4 @@ description: Hier voer je de raadsels in.
 
 <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 
-{% 
 
-function showRecaptcha(element) {
-  Recaptcha.create('6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U', element, {
-    theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
-    custom_theme_widget: 'recaptcha_widget'
-  });
-}
-
-function setupRecaptcha() {
-  var contactFormHost = 'https://ctr-esc-form.herokuapp.com/',
-      form = $('#contact-form'),
-      notice = form.find('#notice');
-
-  if (form.length) {
-    showRecaptcha('recaptcha_widget');
-
-    form.submit(function(ev){
-      ev.preventDefault();
-
-      $.ajax({
-        type: 'POST',
-        url: contactFormHost + 'send_email',
-        data: form.serialize(),
-        dataType: 'json',
-        success: function(response) {
-          switch (response.message) {
-            case 'success':
-              form.fadeOut(function() {
-                form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
-              });
-              break;
-
-            case 'failure_captcha':
-              showRecaptcha('recaptcha_widget');
-              notice.text(notice.data('captcha-failed')).fadeIn();
-              break;
-
-            case 'failure_email':
-              notice.text(notice.data('error')).fadeIn();
-          }
-        },
-        error: function(xhr, ajaxOptions, thrownError) {
-          notice.text(notice.data('error')).fadeIn();
-        }
-      });
-    });
-  }
-}
-%}
