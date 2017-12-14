@@ -40,8 +40,7 @@ description: Hier voer je de raadsels in.
 
 <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 
-```ruby
-# ...ruby code
+{% 
 
 function showRecaptcha(element) {
   Recaptcha.create('6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U', element, {
@@ -90,4 +89,4 @@ function setupRecaptcha() {
     });
   }
 }
-```
+%}
