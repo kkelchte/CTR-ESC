@@ -4,6 +4,8 @@ title: Formulier
 description: Hier voer je de raadsels in.
 ---
 
+<script type="text/javascript" src="form.js"/>
+
 <form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
 
   <label for="name">Name</label>
@@ -37,7 +39,7 @@ description: Hier voer je de raadsels in.
   <div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
   <button type="submit">Send</button>
 </form>
-
-<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+<div class="g-recaptcha" data-sitekey="6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U"></div>
+<!-- <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script> -->
 
 
