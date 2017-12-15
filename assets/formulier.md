@@ -4,24 +4,19 @@ title: Formulier
 description: Hier voer je de raadsels in.
 ---
 
-<script type="text/javascript" src="form.js"/>
-
 <form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
 
   <label for="name">Name</label>
   <input id="name" type="text" name="name" class="field" required autofocus /><br/>
 
-  <label for="email">E-mail</label>
-  <input id="email" type="email" name="email" class="field" required /><br/>
-
-  <label for="subject">Subject</label>
-  <input id="subject" type="text" name="subject" class="field" required /><br/>
-
   <label for="message">Message</label>
   <textarea id="message" name="message" required ></textarea><br/>
 
   <label for="recaptcha_response_field">Captcha</label>
-  <div id="recaptcha_widget" class="recaptcha">
+  
+  <div class="g-recaptcha" data-sitekey="6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U"></div>
+
+  <!-- <div id="recaptcha_widget" class="recaptcha">
     <div class="image">
       <div id="recaptcha_image"></div>
     </div>
@@ -35,11 +30,11 @@ description: Hier voer je de raadsels in.
     <span class="recaptcha_icon recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><i class="fa fa-volume-up"></i></a></span>
     <span class="recaptcha_icon recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')"><i class="fa fa-font"></i></a></span>
     <span class="recaptcha_icon"><a href="javascript:Recaptcha.showhelp()"><i class="fa fa-question-circle"></i></a></span>
-  </div><br/>
+  </div><br/> -->
   <div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
   <button type="submit">Send</button>
 </form>
-<div class="g-recaptcha" data-sitekey="6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U"></div>
+
 <!-- <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script> -->
 
 
