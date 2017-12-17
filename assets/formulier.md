@@ -18,9 +18,9 @@ description: Hier voer je de raadsels in.
 
   <label for="recaptcha_response_field">Captcha</label>
   
-  <div class="g-recaptcha" data-sitekey="6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U"></div>
+  <!-- <div class="g-recaptcha" data-sitekey="6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U"></div> -->
 
-  <!-- <div id="recaptcha_widget" class="recaptcha">
+  <div id="recaptcha_widget" class="recaptcha">
     <div class="image">
       <div id="recaptcha_image"></div>
     </div>
@@ -34,7 +34,7 @@ description: Hier voer je de raadsels in.
     <span class="recaptcha_icon recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><i class="fa fa-volume-up"></i></a></span>
     <span class="recaptcha_icon recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')"><i class="fa fa-font"></i></a></span>
     <span class="recaptcha_icon"><a href="javascript:Recaptcha.showhelp()"><i class="fa fa-question-circle"></i></a></span>
-  </div><br/> -->
+  </div><br/>
   <div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
   <button type="submit">Send</button>
 </form>
