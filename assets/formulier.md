@@ -8,7 +8,7 @@ description: Hier voer je de raadsels in.
 
 **-------NOT READY--------**
 
-<script>
+<script type="text/javascript">
 function showRecaptcha(element) {
   Recaptcha.create('6LezXT0UAAAAAHMmWAonT_pmff-XtnlqMKUcvifc', element, {
     theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
@@ -76,7 +76,7 @@ function setupRecaptcha() {
     </div>
 
     <div class="headline recaptcha_only_if_image">Enter the words above:</div>
-    <div class="headline recaptcha_only_if_audio">Enter the numbers you hear:</div>
+    <!-- <div class="headline recaptcha_only_if_audio">Enter the numbers you hear:</div> -->
 
     <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" required />
 
