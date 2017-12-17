@@ -39,7 +39,7 @@ _bvb: al het basis materiaal te vinden in Age Of Empires: hout, steen, goud en e
 - _Hint: Om een universiteit te bouwen heb je 500 goud nodig._
 
 ### Stap 5: Zijsporen
-Als je de smaak te pakken hebt kan je voor nieuwe uitgangspunten van stap 1 tot en met 4 om zijtrajecten te bedenken. Als deze zijtrajecten gevonden worden kan er extra tijd gewonnen worden wat cruciaal kan zijn om alle raadsels binnen de gegeven tijd opgelost te krijgen. 
+Als je de smaak te pakken hebt kan je voor nieuwe uitgangspunten van stap 1 tot en met 4 om zijtrajecten te bedenken. Als deze zijtrajecten gevonden worden kan er extra tijd gewonnen worden wat cruciaal kan zijn om alle raadsels binnen de gegeven tijd opgelost te krijgen. **Elke speler kan tot max 2 extra zij trajecten verzinnen.**
 
 _bvb:_
 * _karate_
