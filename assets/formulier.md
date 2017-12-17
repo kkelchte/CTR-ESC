@@ -18,7 +18,7 @@ description: Hier voer je de raadsels in.
 
   <label for="recaptcha_response_field">Captcha</label>
   
-  <div class="g-recaptcha" data-sitekey="6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U"></div>
+  <div class="g-recaptcha" data-sitekey="6LezXT0UAAAAAHMmWAonT_pmff-XtnlqMKUcvifc"></div>
 <!-- 
   <div id="recaptcha_widget" class="recaptcha">
     <div class="image">
