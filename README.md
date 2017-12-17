@@ -18,6 +18,8 @@ You can adjust layout and style in the /assets/css/style.scss and /layouts/defau
 
 After creating a Heroku account (verified so you have to give a credit card). You sign up for Captcha (ensures email service is not misused) and Sendgrid (ensures an email is send with correct information by a safe way).
 
+A small note on creating a Captcha Key, ensure you include both kkelchte.github.com domain as well as the ctr-esc-form.herokuapp.com domain.
+
 Create your heroku backend step by step:
 
 * make a local clone of your Heroku project after installing the heroku client.
