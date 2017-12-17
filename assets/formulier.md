@@ -4,11 +4,12 @@ title: Formulier
 description: Hier voer je de raadsels in.
 ---
 
-**---UNDER CONSTRUCTION---**
+**Helaas zal het niet mogelijk zijn om vragen via deze weg in te geven.**
 
-**-------NOT READY--------**
+**De hoofdvraag en eventueel 2 bonusvragen zal manueel op de laptop ingegeven moeten worden.**
 
-<script type="text/javascript">
+
+<!-- <script type="text/javascript">
 function showRecaptcha(element) {
   Recaptcha.create('6LezXT0UAAAAAHMmWAonT_pmff-XtnlqMKUcvifc', element, {
     theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
@@ -66,9 +67,9 @@ function setupRecaptcha() {
   <label for="message">Message</label>
   <textarea id="message" name="message" required ></textarea><br/>
 
-  <label for="recaptcha_response_field">Captcha</label>
+  <label for="recaptcha_response_field">Captcha</label> -->
   
-  <!-- <div class="g-recaptcha" data-sitekey="6LezXT0UAAAAAHMmWAonT_pmff-XtnlqMKUcvifc"></div> -->
+  <!-- <div class="g-recaptcha" data-sitekey="6LezXT0UAAAAAHMmWAonT_pmff-XtnlqMKUcvifc"></div>
   
   <div id="recaptcha_widget" class="recaptcha">
     <div class="image">
@@ -76,9 +77,9 @@ function setupRecaptcha() {
     </div>
 
     <div class="headline recaptcha_only_if_image">Enter the words above:</div>
-    <!-- <div class="headline recaptcha_only_if_audio">Enter the numbers you hear:</div> -->
+    <div class="headline recaptcha_only_if_audio">Enter the numbers you hear:</div> -->
 
-    <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" required />
+<!--     <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" required />
 
     <span class="recaptcha_icon"><a href="javascript:Recaptcha.reload()"><i class="fa fa-refresh"></i></a></span>
     <span class="recaptcha_icon recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><i class="fa fa-volume-up"></i></a></span>
@@ -92,3 +93,4 @@ function setupRecaptcha() {
 <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 
 
+ -->
