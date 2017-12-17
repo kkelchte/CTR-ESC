@@ -1,5 +1,5 @@
 function showRecaptcha(element) {
-  Recaptcha.create('6LdpODwUAAAAAJtQoF7JShZSsxfIiRCqpIQLcz-U', element, {
+  Recaptcha.create('6LezXT0UAAAAAHMmWAonT_pmff-XtnlqMKUcvifc', element, {
     theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
     custom_theme_widget: 'recaptcha_widget'
   });
