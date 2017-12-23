@@ -1,0 +1,24 @@
+TODO list:
+
+Top prioritair:
+- mogelijkheid om bonus vraag op te lossen voor extra (5min) (to test)
+
+- beloning = foto met beste kerstwens op scherm laten verschijnen
+	- display ...
+
+Test:
+ingeven van vragen van verschillende personen en bonusvragen
+
+
+- eigen raadsel mkaen
+
+Secundair:
+- animatie bij ingeven
+- animatie bij elke overgang
+- geluid van timer
+- spraak van vraag
+- bash art
+- extra scherm met tussenstand (tail -f stat_file)
+- luister verhaal voorzien voor ge-outzonede
+- maskertje voorzien voor geoutzonede
+- example gameplay
